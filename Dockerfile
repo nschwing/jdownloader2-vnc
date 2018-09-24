@@ -37,6 +37,6 @@ COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["java", "-jar", "/app/JDownloader.jar", "-n"]
+CMD ["java", "-jar", "/app/JDownloader.jar"]
 VOLUME ["/app", "/download"]
 EXPOSE 5800 5900
